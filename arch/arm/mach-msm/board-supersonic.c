@@ -1046,10 +1046,10 @@ static struct i2c_board_info i2c_devices[] = {
 	},
 
 	{
-		I2C_BOARD_INFO("ov8810", 0x6C >> 1),
+                I2C_BOARD_INFO("ov9665", 0x60 >> 1),
 	},
 	{
-		I2C_BOARD_INFO("ov9665", 0x60 >> 1),
+                I2C_BOARD_INFO("ov8810", 0x6C >> 1),
 	},
 	{
 		I2C_BOARD_INFO(TPA6130_I2C_NAME, 0xC0 >> 1),
@@ -1293,10 +1293,10 @@ static struct platform_device *devices[] __initdata = {
 	&android_pmem_ciq2_device,
 	&android_pmem_ciq3_device,
 #endif
-	&msm_camera_sensor_ov8810,
+	&msm_camera_sensor_ov9665,
 	&msm_kgsl_device,
 	&msm_device_i2c,
-	&msm_camera_sensor_ov9665,
+	&msm_camera_sensor_ov8810,
 	&supersonic_flashlight_device,
 	&supersonic_leds,
 #if defined(CONFIG_SPI_QSD)
