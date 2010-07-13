@@ -1199,6 +1199,7 @@ static long pmem_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 		return pmem_connect(arg, file);
 		break;
 
+	case PMEM_CACHE_FLUSH:
 	case PMEM_CLEAN_INV_CACHES:
 	case PMEM_CLEAN_CACHES:
 	case PMEM_INV_CACHES:
